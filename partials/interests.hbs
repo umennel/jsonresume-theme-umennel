@@ -1,0 +1,17 @@
+{{#if resume.interests.length}}
+<div id="interests" class="box">
+<h2><i class="fa fa-heart ico"></i> Interests</h2>
+{{#each resume.interests}}
+<div class="interests clearfix">
+	<div class="item-interests">
+		{{name}}
+	</div>
+	<div class="col-sm-offset-1 col-sm-12 clearfix">
+	{{#each keywords}}
+	<span class= "interest badge">{{.}}</span>
+	{{/each}}
+	</div>
+</div>
+{{/each}}
+</div>
+{{/if}}

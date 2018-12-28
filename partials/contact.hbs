@@ -1,0 +1,39 @@
+{{#resume.basics}}
+<div class="box clearfix">
+    <h2><i class="fa fa-info-circle ico"></i> Contact</h2>
+    {{#if location}}
+    <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+        {{#if location.address}}<div class="title pull-right">{{location.address}}</div>{{/if}}
+        <div class="title {{#unless location.address}}only{{/unless}} pull-right">{{#if location.postalCode}}{{location.postalCode}}{{/if}} {{location.city}}{{#if location.region}}, {{location.region}}{{/if}}{{#if location.countryCode}} {{location.countryCode}}{{/if}}</div>
+    </div>
+    {{/if}}
+    {{#if phone}}
+    <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+        <div class="title only pull-right">{{phone}}</div>
+    </div>
+    {{/if}}
+    {{#if email}}
+    <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+        <div class="title only pull-right"><a href="mailto:{{email}}" target="_blank">{{email}}</a></div>
+    </div>
+    {{/if}}
+    {{#if website}}
+    <div class="contact-item">
+        <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+        <div class="title only pull-right"><a href="{{website}}" target="_blank">{{website}}</a></div>
+    </div>
+    {{/if}}
+    {{#if profiles.length}}
+        {{#each profiles}}
+        <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fab fa-{{toLowerCase network}} fa-fw"></span></div>
+            <div class="title pull-right">{{network}}</div>
+            <div class="description pull-right"><a href="{{url}}" target="_blank">{{#if username}}{{username}}{{/if}}{{#if username}}{{url}}{{/if}}</a></div>
+        </div>
+        {{/each}}
+	{{/if}}
+</div>
+{{/resume.basics}}

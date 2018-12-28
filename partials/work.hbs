@@ -1,0 +1,45 @@
+{{#if resume.work.length}}
+<div class="box">
+<h2><i class= "fa fa-toolbox ico"></i> Work Experience</h2>
+{{#each resume.work}}
+	<div class="job clearfix">
+	<div class="row">
+		<div class="details">
+		
+		<div class="where">{{company}}</div>
+		{{#if website}}
+		<div class="address">
+			<a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+		</div>
+		{{/if}}
+		<div class="year">{{startDate}} – {{#if endDate}}{{endDate}}{{else}}present{{/if}}</div>
+		
+		</div>
+	</div>
+	<div class="row">
+		<div class="job-details col-xs-11">
+		<div class="profession">{{position}}</div>
+		<div class="description">
+			{{{summary}}}
+			{{#if highlights.length}}
+			<ul class="list-group">
+			{{#each highlights}}
+				<li class="list-group-item"><div>{{description}}</div>
+				{{#if technologies.length}}
+				<div class="technologies">
+					{{#each technologies}}
+                    <span class= "skill badge">{{.}}</span>
+					{{/each}}
+				</div>
+				{{/if}}
+				</li>
+			{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		</div>
+	</div>
+	</div>
+{{/each}}
+</div>
+{{/if}}

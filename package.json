@@ -1,0 +1,27 @@
+{
+  "name": "jsonresume-theme-umennel",
+  "version": "1.0.0",
+  "description": "Uche Mennel's jsonresume theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umennel/jsonresume-theme-umennel.git"
+  },
+  "keywords": [
+    "jsonresume",
+    "resume",
+    "cv"
+  ],
+  "author": "Uche Mennel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/umennel/jsonresume-theme-umennel/issues"
+  },
+  "homepage": "https://github.com/umennel/jsonresume-theme-umennel#readme",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}

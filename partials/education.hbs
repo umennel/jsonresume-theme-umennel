@@ -1,0 +1,22 @@
+{{#if resume.education.length}}
+<div class="box">
+	<h2><i class="fa fa-university ico"></i> Education</h2>
+	{{#each resume.education}}
+	<ul class="education list-group">
+		<div class="details">
+		<div class="where">{{institution}}</div>
+        <div><i class="fa fa-graduation-cap ico"></i> {{area}}</div>
+		<div class="year">{{startDate}} – {{endDate}}</div>
+		{{#if gpa}}<p>GPA: {{gpa}}</p>{{/if}}
+		</div>
+
+	{{#if courses.length}}
+	
+	{{#each courses}}
+		<li class="list-group-item">{{.}}</li>
+	{{/each}}
+	</ul>
+	{{/if}}
+	{{/each}}
+</div>
+{{/if}}
