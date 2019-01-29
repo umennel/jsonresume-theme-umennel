@@ -12,7 +12,7 @@
 			<a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
 		</div>
 		{{/if}}
-		<div class="year">{{startDate}} – {{#if endDate}}{{endDate}}{{else}}present{{/if}}</div>
+		<div class="year">{{getMonth startDate}} {{getYear startDate}} – {{#if endDate}}{{getMonth endDate}} {{getYear endDate}}{{else}}present{{/if}}</div>
 		
 		</div>
 	</div>
@@ -24,14 +24,14 @@
 			{{#if highlights.length}}
 			<ul class="list-group">
 			{{#each highlights}}
-				<li class="list-group-item"><div>{{description}}</div>
-				{{#if technologies.length}}
+				<li class="list-group-item"><div>{{this}}</div>
+				{{#with (lookup ../keywords @index) as |keywords|}}
 				<div class="technologies">
-					{{#each technologies}}
-                    <span class= "skill badge">{{.}}</span>
+					{{#each keywords}}
+                    <span class= "skill badge">{{this}}</span>
 					{{/each}}
 				</div>
-				{{/if}}
+				{{/with}}
 				</li>
 			{{/each}}
 			</ul>

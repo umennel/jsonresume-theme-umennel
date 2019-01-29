@@ -6,12 +6,11 @@
 		<div class="details">
 		<div class="where">{{institution}}</div>
         <div><i class="fa fa-graduation-cap ico"></i> {{area}}</div>
-		<div class="year">{{startDate}} – {{endDate}}</div>
+		<div class="year">{{getYear startDate}} – {{#if endDate}}{{getYear endDate}}{{else}}present{{/if}}</div>
 		{{#if gpa}}<p>GPA: {{gpa}}</p>{{/if}}
 		</div>
 
-	{{#if courses.length}}
-	
+	{{#if courses.length}}	
 	{{#each courses}}
 		<li class="list-group-item">{{.}}</li>
 	{{/each}}

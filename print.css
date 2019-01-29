@@ -1,6 +1,7 @@
 body {
   font-size: 1.2em;
   -webkit-print-color-adjust: exact;
+  background: none !important;
 }
 
 .container {
@@ -13,14 +14,10 @@ a[href]:after {
   content: none !important;
 }
 
-/* #photo{
-  margin-top: -10px;
-} */
-
 #photo{
   width: 30mm;
   height: 30mm;
-  /* background: #334960 !important; */
+  background: none !important;
 }
 
 #photo img{

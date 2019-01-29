@@ -6,7 +6,6 @@ function render(resume) {
 	var bootstrapcss = fs.readFileSync(__dirname + "/bootstrap.css", "utf-8");
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
 	var printcss = fs.readFileSync(__dirname + "/print.css", "utf-8");
-	resume.basics.picture = "../" + resume.basics.picture;
 	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
 	var partialsDir = path.join(__dirname, 'partials');
 	var filenames = fs.readdirSync(partialsDir);
@@ -25,6 +24,16 @@ function render(resume) {
 
 	Handlebars.registerHelper('toLowerCase', function(str) {
 		return str.toLowerCase();
+	});
+
+	Handlebars.registerHelper('getMonth', function(dateStr) {
+		var months = ["January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December"];
+		return months[parseInt(dateStr.substr(5,2))-1] || '';
+	});
+
+	Handlebars.registerHelper('getYear', function(dateStr) {
+		return dateStr.substr(0,4);
 	});
 
 	return Handlebars.compile(tpl)({

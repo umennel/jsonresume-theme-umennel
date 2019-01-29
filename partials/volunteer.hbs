@@ -11,7 +11,7 @@
 			<a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
 		</div>
 		{{/if}}
-		<div class="year">{{startDate}} – {{#if endDate}}{{endDate}}{{else}}present{{/if}}</div>
+		<div class="year">{{getMonth startDate}} {{getYear startDate}} – {{#if endDate}}{{getMonth endDate}} {{getYear endDate}}{{else}}present{{/if}}</div>
 		</div>
 	</div>
 	<div class="row">
