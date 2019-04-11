@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/umennel/jsonresume-theme-umennel#readme",
   "dependencies": {
-    "handlebars": ">=4.0.0"
+    "handlebars": "^4.1.1"
   }
 }
