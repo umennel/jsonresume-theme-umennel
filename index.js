@@ -36,6 +36,10 @@ function render(resume) {
 		return dateStr.substr(0,4);
 	});
 
+	Handlebars.registerHelper('join', function(array, separator) {
+		return array.join(separator);
+	});
+
 	return Handlebars.compile(tpl)({
 		bootstrapcss: bootstrapcss,
 		css: css,

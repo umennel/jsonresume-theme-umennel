@@ -5,16 +5,16 @@
     <div class="publication panel panel-default">
 		<div class="panel-heading">
 		<div class="name panel-title">{{name}}</div>
+		{{#if url}}
+		<div class="address">
+			<a href="{{url}}" target= "_blank"><i class="fa fa-globe ico"></i> {{url}}</a>
+		</div>
+		{{/if}}
 		<div class="year">{{getMonth releaseDate}} {{getYear releaseDate}}</div>
 		</div>
 		<div class="panel-body">
 			{{#if publisher}}
 			<div><i class="fa fa-bookmark ico"></i> {{publisher}}</div>
-			{{/if}}
-			{{#if website}}
-			<div class="address">
-				<a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
-			</div>
 			{{/if}}
 			{{#if summary}}
 			<p>{{summary}}</p>
