@@ -1,15 +1,15 @@
 {{#if resume.publications.length}}
-<div class="box">
+<div id="publications" class="box">
     <h2><i class="fa fa-book ico"></i> Publications</h2>
     {{#each resume.publications}}
     <div class="publication panel panel-default">
 		<div class="panel-heading">
 		<div class="name panel-title">{{name}}</div>
-		<div class="year">{{releaseDate}}</div>
+		<div class="year">{{getMonth releaseDate}} {{getYear releaseDate}}</div>
 		</div>
 		<div class="panel-body">
 			{{#if publisher}}
-			<div class="publisher"><i class= "fa fa-bookmark ico"></i> {{publisher}}</div>
+			<div><i class="fa fa-bookmark ico"></i> {{publisher}}</div>
 			{{/if}}
 			{{#if website}}
 			<div class="address">

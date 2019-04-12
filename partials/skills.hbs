@@ -5,7 +5,12 @@
 <div class="skills clearfix">
 	<div class="item-skills">
 		{{name}}
-		{{#if level}}<span class="skill-level">{{level}}</span>{{/if}}
+		{{#if level}}
+		<span class="level {{toLowerCase level}} pull-right">
+			{{level}}
+			<div class="bar"></div>
+		</span>
+		{{/if}}
 	</div>
 	<div class="col-sm-offset-1 col-sm-12 clearfix">
 	{{#each keywords}}

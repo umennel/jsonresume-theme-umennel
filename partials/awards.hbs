@@ -1,29 +1,21 @@
 {{#if resume.awards.length}}
-<section id="awards">
-	<h2>Awards</h2>
-	{{#each resume.awards}}
-	<div class="item">
-		{{#if title}}
-		<div class="title">
-			{{title}}
+<div id="awards" class="box">
+    <h2><i class="fa fa-award ico"></i> Awards</h2>
+    {{#each resume.awards}}
+    <div class="award panel panel-default">
+		<div class="panel-heading">
+		<div class="title panel-title">{{title}}</div>
+		<div class="date">{{getMonth date}} {{getYear date}}</div>
 		</div>
-		{{/if}}
-		{{#if date}}
-		<div class="date">
-			{{date}}
-		</div>
-		{{/if}}
-		{{#if awarder}}
-		<div class="awarder">
-			{{awarder}}
-		</div>
-		{{/if}}
-		{{#if summary}}
-		<div class="summary">
+		<div class="panel-body">
+			{{#if awarder}}
+			<div><i class= "fa fa-bookmark ico"></i> {{awarder}}</div>
+			{{/if}}
+			{{#if summary}}
 			<p>{{summary}}</p>
+			{{/if}}
 		</div>
-		{{/if}}
-	</div>
-	{{/each}}
-</section>
+    </div>
+    {{/each}}
+</div>
 {{/if}}

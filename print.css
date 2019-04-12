@@ -53,11 +53,13 @@ blockquote,
 #education,
 #awards,
 .contact-item,
-.publication,
+#publication,
 .job,
 #skills,
 #interests,
-#languages {
+#languages,
+#volunteer,
+#references {
   page-break-inside: avoid;
 }
 
