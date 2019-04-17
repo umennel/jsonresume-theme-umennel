@@ -1,0 +1,196 @@
+{
+  "basics": {
+    "name": "Richard Hendriks",
+    "label": "Programmer",
+    "image": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.0' width='200' height='200' id='svg2'%3E%3Cdefs id='defs7'/%3E%3Cpath d='M 3.1479956,199.8792 C 3.2975635,189.11012 3.401856,181.58351 3.0839455,167.62229 C 10.105706,158.82749 34.823782,154.79402 41.576501,152.37892 C 50.290941,145.87438 60.163612,140.3389 68.674128,135.43826 C 73.373849,132.73205 73.434971,123.45565 73.090981,117.22608 C 71.529518,108.40367 70.704151,100.79588 64.405541,94.317884 C 64.053201,92.46819 63.024431,88.22384 59.931471,82.679233 C 57.850015,73.360874 49.646154,61.821919 51.707332,55.90224 C 57.196471,40.137595 52.40075,33.731056 55.771462,32.383588 C 63.458756,29.310542 65.537537,22.590118 72.578356,15.841971 C 93.149082,11.923669 89.987081,1.4887794 105.35709,3.5044295 C 124.4076,6.0027415 113.91578,8.8197325 126.98208,15.459115 C 143.03475,23.615971 133.46982,24.442181 148.12438,46.038481 C 156.82644,58.862616 139.87501,59.736843 144.26704,71.085333 C 148.3243,81.568657 138.76017,83.355833 133.93493,94.828249 C 129.30575,105.83459 126.40093,109.0707 131.73108,123.57794 C 136.68074,137.04961 144.89857,130.89422 163.46019,151.07177 C 168.1733,156.1952 185.10612,149.99341 196.76509,164.95509 C 196.75779,172.625 196.92784,183.5909 196.98027,199.93748 C 144.72386,199.75031 3.1479956,199.8792 3.1479956,199.8792 z' id='path4' style='fill:%23000000;fill-opacity:1'/%3E%3C/svg%3E",
+    "email": "richard.hendriks@mail.com",
+    "phone": "(912) 555-4321",
+    "url": "http://richardhendricks.example.com",
+    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "neutralthoughts",
+        "url": ""
+      },
+      {
+        "network": "SoundCloud",
+        "username": "dandymusicnl",
+        "url": "https://soundcloud.example.com/dandymusicnl"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Pied Piper",
+      "location": "Palo Alto, CA",
+      "description": "Awesome compression company",
+      "position": "CEO/President",
+      "url": "http://piedpiper.example.com",
+      "startDate": "2013-12-01",
+      "endDate": "2014-12-01",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": [
+        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+        "Successfully won Techcrunch Disrupt",
+        "Optimized an algorithm that holds the current world record for Weisman Scores"
+      ]
+    },
+    {
+      "name": "Acme Inc.",
+      "location": "Los Angeles, CA",
+      "description": "A fictional cooperation",
+      "position": "Developer",
+      "url": "http://acme.example.com",
+      "startDate": "2012-12-01",
+      "endDate": "2013-12-01",
+      "summary": "The Acme Corporation is a fictional corporation.",
+      "highlights": [
+        "Produced every product type imaginable, no matter how elaborate or extravagant",
+        "Feature in many cartoons"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "url": "http://coderdojo.example.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": [
+        "Awarded 'Teacher of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Oklahoma",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "2011-06-01",
+      "endDate": "2014-01-01",
+      "gpa": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL",
+        "CS2011 - Java Introduction"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Beginner",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Compression",
+      "level": "Master",
+      "keywords": [
+        "Mpeg",
+        "MP4",
+        "GIF"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    },
+    {
+      "name": "Bent Keck",
+      "reference": "Not a great programmer; Just a good programmer with great habits."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Miss Direction",
+      "description": "A mapping engine that misguides you",
+      "highlights": [ 
+        "Won award at AIHacks 2016",
+        "Built by all women team of newbie programmers",
+        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+      ],
+      "keywords": [
+        "GoogleMaps", "Chrome Extension", "Javascript"
+      ],
+      "startDate": "2016-07-24",
+      "endDate": "2016-08-24", 
+      "url": "missdirection.example.com",
+      "roles": [ 
+        "Team lead", "Designer"
+      ],
+      "entity": "Smoogle",
+      "type": "application"
+    },
+    {
+      "name": "Acme",
+      "description": "Useless and abstract modules for the Perl programming language",
+      "highlights": [
+        "Part of the Comprehensive Perl Archive Network (CPAN)",
+        "Homage to that greatest of all absurd system creators"
+      ],
+      "keywords": [
+        "Perl"
+      ],
+      "startDate": "2015-08-24",
+      "endDate": "2016-07-24", 
+      "url": "cpan.org",
+      "roles": [ 
+        "Developer"
+      ],
+      "entity": "Acme",
+      "type": "library"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
