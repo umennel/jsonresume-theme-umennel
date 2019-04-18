@@ -2,20 +2,24 @@
 <div id="awards" class="box">
     <h2><i class="fa fa-award ico"></i> Awards</h2>
     {{#each resume.awards}}
-    <div class="award panel panel-default">
-		<div class="panel-heading">
-		<div class="title panel-title">{{title}}</div>
-		<div class="date">{{getMonth date}} {{getYear date}}</div>
-		</div>
-		<div class="panel-body">
-			{{#if awarder}}
-			<div><i class= "fa fa-bookmark ico"></i> {{awarder}}</div>
-			{{/if}}
-			{{#if summary}}
-			<p>{{summary}}</p>
-			{{/if}}
-		</div>
-    </div>
-    {{/each}}
+	  <div class="achievement">
+			<div class="header">
+					{{#if title}}
+					<h3>{{title}}</h3>
+					{{/if}}
+					{{#if date}}
+					<p class="date">{{getMonth date}} {{getYear date}}</p>
+					{{/if}}   
+			</div>
+			<div class="details">
+					{{#if awarder}}
+					<p><i class= "fa fa-bookmark ico"></i> {{awarder}}</p>
+					{{/if}}
+					{{#if summary}}
+					<p>{{summary}}</p>
+					{{/if}}
+			</div>
+	  </div>
+		{{/each}}
 </div>
 {{/if}}

@@ -2,12 +2,12 @@
 <div id="references" class="box">
     <h2><i class="fa fa-thumbs-up ico"></i> References</h2>
     {{#each resume.references}}
-	<div class="reference">
+	<div class="achievement">
 		{{#if reference}}
 		<blockquote>{{reference}}</blockquote>
 		{{/if}}
 		{{#if name}}
-		<div class="name">— {{name}}</div>
+		<div class="details">— {{name}}</div>
 		{{/if}}
 	</div>
 	{{/each}}

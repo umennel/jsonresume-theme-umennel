@@ -1,16 +1,20 @@
 {{#if resume.languages.length}}
 <div id="languages" class="box">
-<h2><i class="fa fa-language ico"></i> Languages</h2>
-<ul class="list-group">
-	{{#each resume.languages}}
-	<li class=" list-group-item">
-		{{language}}
-		<span class="level {{toLowerCase fluency}} pull-right">
-			{{fluency}}
-			<div class="bar"></div>
-		</span>
-	</li>
-	{{/each}}
-</ul>
+	<h2><i class="fa fa-language ico"></i> Languages</h2>
+	<div class="achievement">
+		<div class="details">
+			<ul class="list-group">
+				{{#each resume.languages}}
+				<li class=" list-group-item">
+					{{language}}
+					<span class="level {{toLowerCase fluency}} pull-right">
+						{{fluency}}
+						<div class="bar"></div>
+					</span>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
 </div>
 {{/if}}

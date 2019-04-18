@@ -1,12 +1,12 @@
 {{#resume.basics}}
-    {{#with image}}
-	<div id="photo-header">
-		<div id="photo">
-			<img src="{{{this}}}" alt="avatar">
-		</div>
+<div id="header" class="box clearfix">
+	{{#with image}}
+	<div id="photo" class="pull-left">
+		<img src="{{.}}" alt="avatar">
 	</div>
 	{{/with}}
-	<div id="text-header">
-		<h1>{{name}}<br>{{#if label}}<span>{{label}}</span>{{/if}}</h1>
-	</div>
+	<h1 {{#unless image}}class="text-center"{{/unless}}>
+		{{name}}<br>{{#if label}}<span>{{label}}</span>{{/if}}
+	</h1>
+</div>
 {{/resume.basics}}

@@ -1,46 +1,40 @@
 {{#if resume.work.length}}
-<div id="work" class="box">
-<h2><i class= "fa fa-toolbox ico"></i> Work Experience</h2>
-{{#each resume.work}}
-	<div class="job clearfix">
-	<div class="row">
+<div id="work" class="box achievement">
+	<h2><i class= "fa fa-toolbox ico"></i> Work Experience</h2>
+	{{#each resume.work}}
+	<div class="achievement">
+		<div class="header">
+			{{#if name}}
+			<h3>{{name}}</h3>
+			{{/if}}
+			{{#if url}}
+			<p class="address">
+				<a href="{{url}}" target= "_blank"><i class="fa fa-globe ico"></i> {{url}}</a>
+			</p>
+			{{/if}}
+			<p class="date">{{getMonth startDate}} {{getYear startDate}} – {{#if endDate}}{{getMonth endDate}} {{getYear endDate}}{{else}}present{{/if}}</p>
+		</div>
 		<div class="details">
-		
-		<div class="name">{{name}}</div>
-		{{#if url}}
-		<div class="address">
-			<a href="{{url}}" target= "_blank"><i class="fa fa-globe ico"></i> {{url}}</a>
-		</div>
-		{{/if}}
-		<div class="year">{{getMonth startDate}} {{getYear startDate}} – {{#if endDate}}{{getMonth endDate}} {{getYear endDate}}{{else}}present{{/if}}</div>
-		
-		</div>
-	</div>
-	<div class="row">
-		<div class="job-details col-xs-11">
-			<div class="position">{{position}}</div>
-			<div class="description">
-                {{{summary}}}
-                {{#if highlights.length}}
-                <ul class="list-group">
-                {{#each highlights}}
-                    <li class="list-group-item">
-                        <div>{{this}}</div>
-                    </li>
-                {{/each}}
-                </ul>
-                {{/if}}
-				{{#if keywords.length}}
-				<div>
-                    {{#each keywords}}
-                    <span class= "skill badge">{{this}}</span>
-                    {{/each}}
-                </div>
-				{{/if}}
-            </div>
+			<h3>{{position}}</h3>
+			{{#if summary}}
+			{{summary}}
+			{{/if}}
+			{{#if highlights.length}}
+			<ul class="list-group">
+			{{#each highlights}}
+				<li class="list-group-item">{{this}}</li>
+			{{/each}}
+			</ul>
+			{{/if}}
+			{{#if keywords.length}}
+			<div>
+				{{#each keywords}}
+				<span class= "skill badge">{{this}}</span>
+				{{/each}}
+			</div>
+			{{/if}}
 		</div>
 	</div>
-	</div>
-{{/each}}
+	{{/each}}
 </div>
 {{/if}}

@@ -1,53 +1,47 @@
 {{#if resume.projects.length}}
-<div id="work" class="box">
-<h2><i class= "fa fa-tools ico"></i> Projects</h2>
-{{#each resume.projects}}
-	<div class="job clearfix">
-	<div class="row">
-		<div class="details">
-		{{#if name}}
-		<div class="name">{{name}}</div>
-        {{/if}}
-		{{#if url}}
-		<div class="address">
-			<a href="{{url}}" target= "_blank"><i class="fa fa-globe ico"></i> {{url}}</a>
-		</div>
-		{{/if}}
-		<div class="year">{{getMonth startDate}} {{getYear startDate}} – {{#if endDate}}{{getMonth endDate}} {{getYear endDate}}{{else}}present{{/if}}</div>
-		
-		</div>
-	</div>
-	<div class="row">
-		<div class="job-details col-xs-11">
+<div id="projects" class="box">
+    <h2><i class= "fa fa-tools ico"></i> Projects</h2>
+    {{#each resume.projects}}
+    <div class="achievement">
+        <div class="header">
+            {{#if name}}
+            <h3>{{name}}</h3>
+            {{/if}}
+            {{#if url}}
+            <p class="address">
+                <a href="{{url}}" target= "_blank"><i class="fa fa-globe ico"></i> {{url}}</a>
+            </p>
+            {{/if}}
+            {{#if startDate}}
+            <p class="date">{{getMonth startDate}} {{getYear startDate}} – {{#if endDate}}{{getMonth endDate}} {{getYear endDate}}{{else}}present{{/if}}</p>
+            {{/if}}   
+        </div>
+        <div class="details">
             {{#if entity}}
-            <div><i class= "fa fa-bookmark ico"></i> {{entity}}</div>
+            <p><i class= "fa fa-bookmark ico"></i> {{entity}}</p>
             {{/if}}
             {{#if roles}}
-            <div><i class= "fa fa-user-cog ico"></i> {{join roles ', '}}</div>
+            <p><i class= "fa fa-user-cog ico"></i> {{join roles ', '}}</p>
             {{/if}}
-
-            <div class="description">
-                {{{description}}}
-                {{#if highlights.length}}
-                <ul class="list-group">
-                {{#each highlights}}
-                    <li class="list-group-item">
-                        <div>{{this}}</div>
-                    </li>
-                {{/each}}
-                </ul>
-                {{/if}}
-                {{#if keywords.length}}
-				<div>
-                    {{#each keywords}}
-                    <span class= "skill badge">{{this}}</span>
-                    {{/each}}
-                </div>
-				{{/if}}
-            </div>
-		</div>
-	</div>
-	</div>
-{{/each}}
+            {{#if description}}
+            <p>{{description}}</p>
+            {{/if}}
+            {{#if highlights.length}}
+            <ul class="list-group">
+            {{#each highlights}}
+                <li class="list-group-item">{{this}}</li>
+            {{/each}}
+            </ul>
+            {{/if}} 
+        </div>
+        {{#if keywords.length}}
+        <div class="details">
+            {{#each keywords}}
+            <span class="keyword badge">{{this}}</span>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+    {{/each}}
 </div>
 {{/if}}
