@@ -1,0 +1,14 @@
+{{#if resume.certificates.length}}
+<div id="certificates" class="box">
+	<h2><i class="fa fa-certificate ico"></i> Certificates</h2>
+	{{#each resume.certificates}}
+	<div class="achievement">
+		<div class="header">
+			<h3>{{issuer}}</h3>
+			<p><i class="fa fa-scroll ico"></i> {{name}}</p>
+			<p class="date">{{getMonth date}} {{getYear date}}</p>
+		</div>
+	</div>
+	{{/each}}
+</div>
+{{/if}}
