@@ -10,35 +10,38 @@ It is based on [Bootstrap CSS](https://getbootstrap.com/) and features a printab
 ## Getting started
 
 To get started, make sure you installed [node.js](http://howtonode.org/how-to-install-nodejs) and [npm](http://howtonode.org/introduction-to-npm).
+Node version should be >= 20.
 
-### Install the command line tools
-
-Use the official [resume-cli](https://github.com/jsonresume/resume-cli) to run the development server.
-
-Install it using `npm`:
-
-    sudo npm install -g resume-cli
-
-### Install and serve theme
-
-Clone the repository
-
-    git clone https://github.com/umennel/jsonresume-theme-umennel
-
-We need to install the dependencies. `cd` into the theme folder you just cloned and run:
-
-    npm install
-
-This will read the local `package.json` and install the packages listed under `dependencies`.
-
-While inside the theme folder, simply run:
-
-    resume serve
-
-You should now see this message:
-
-    Preview: http://localhost:4000
-    Press ctrl-c to stop
+1. Clone this repository
+```bash
+git clone https://github.com/umennel/jsonresume-theme-umennel
+```
+2. Clone the `resumed` local theme example template with [degit](https://github.com/Rich-Harris/degit)
+```bash
+npx degit rbardini/resumed/examples/with-local-theme
+```
+3. Copy or link the content of this repo as a subdirectory
+4. Modify the file package.json in the local theme example template to look like this:
+```json
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "resumed init",
+    "start": "resumed --theme jsonresume-theme-umennel"
+  },
+  "dependencies": {
+    "jsonresume-theme-umennel": "file:./jsonresume-theme-umennel",
+    "resumed": "^3.0.0"
+  }
+}
+```
+5. Install dependencies, create and render resume:
+```bash
+npm install
+npm run init
+npm start
+```
 
 ## Customization
 
