@@ -188,6 +188,20 @@
       "type": "library"
     }
   ],
+  "certificates":
+  [
+    {
+      "name": "CKAD",
+      "date": "2024-01-31",
+      "issuer": "Google",
+      "url": "https://www.google.com"
+    },
+    {
+      "name": "OCAJP",
+      "date": "2023-12-31",
+      "issuer": "Oracle"
+    }
+  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
